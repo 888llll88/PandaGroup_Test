@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * I think we have two ways to solve third point.
+ * The first one is down here,
+ * here I change the template of configurable products if we need major changes.
+ * The second solution is to override phtml for all type of products - default.phtml
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock
+            name="checkout.cart.item.renderers.configurable"
+            template="Magento_Checkout::cart/item/pandaDefault.phtml"
+        />
+    </body>
+</page>

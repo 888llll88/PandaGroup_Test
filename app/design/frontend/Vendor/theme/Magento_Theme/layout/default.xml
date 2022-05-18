@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * We have to create CMS via admin panel or dataPatch
+ * Block title: "[Footer][Contact][Us]"
+ * Identifier: "contact_us"
+ * {{block class="Magento\Framework\View\Element\Template" template="Magento_Theme::contact-us.phtml"}}
+ */
+ -->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Cms\Block\Block" name="contact-us">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">contact_us</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
+
